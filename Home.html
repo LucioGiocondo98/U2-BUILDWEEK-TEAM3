@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid bg-dark">
+        <div class="row justify-content-center">
+          <!-- Sidebar sinistra -->
+
+          <div class="col-12 col-md-3 sidebar bg-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-three-dots m-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+              />
+            </svg>
+            <ul class="list-unstyled text-white-50 m-3 mb-5">
+              <li class="mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-fill me-2 mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+                  />
+                  <path
+                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+                  />
+                </svg>
+
+                Home
+              </li>
+              <li class="mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search me-2 mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+                Cerca
+              </li>
+              <li class="mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection me-2 mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+                  />
+                </svg>
+                La tua libreria
+              </li>
+
+              <hr class="invisible" />
+
+              <li class="mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-plus-square-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"
+                  />
+                </svg>
+                Crea playlist
+              </li>
+              <li class="mb-3">Brani che ti piacciono</li>
+
+              <li class="mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bookmark-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"
+                  />
+                </svg>
+                I tuoi episodi
+              </li>
+            </ul>
+            <hr />
+            <p class="text-white-50">
+              eraly stage emily syndrome(sett-ott2022)
+            </p>
+            <p class="text-white-50">Be the Young</p>
+            <p class="text-white-50">"..."cit Kimiko (lug-ago2022)</p>
+            <p class="text-white-50">saggio vibes</p>
+            <p class="text-white-50">main character energy (mag-giu)</p>
+            <p class="text-white-50">that fucking mood</p>
+            <p class="text-white-50">VEE, CARLOTTA EGIACOMO VANNO A BOSIO</p>
+            <p class="text-white-50">2021 lol</p>
+            <p class="text-white-50">
+              cosa cazzo vuol dire questa affermazione
+            </p>
+            <p class="text-white-50">honey and glass (nov-dic 2021)</p>
+            <p class="text-white-50">
+              eraly stage emily syndrome(sett-ott2022)
+            </p>
+            <p class="text-white-50">Be the Young</p>
+            <p class="text-white-50">"..."cit Kimiko (lug-ago2022)</p>
+            <p class="text-white-50">saggio vibes</p>
+            <p class="text-white-50">main character energy (mag-giu)</p>
+          </div>
+          <!-- Centro Pagina -->
+          <!-- Arrows -->
+          <div class="col-12 col-md-7">
+            <div class="col d-flex align-items-center justify-content-between">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-arrow-left-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                  />
+                </svg>
+              </div>
+              <!--  Foto Profilo -->
+              <div class="d-flex justify-content-end align-items-center">
+                <div class="dropdown">
+                  <!-- Bottone con la freccia -->
+                  <button
+                    class="btn btn-dark dropdown-toggle rounded-5"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="height: 35px; background-color: black; width: 100%"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="white"
+                      class="bi bi-person-circle mb-1"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                      />
+                    </svg>
+                    Team 3<i class="bi bi-arrow-down-circle"></i>
+                  </button>
+                  <!-- Menu a scomparsa -->
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Playlist</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Primo Brano Home -->
+            <div class="row bg-dark shadow">
+              <div class="col-12 col-md-3">
+                <img
+                  class="img-fluid"
+                  src="./assets 2/imgs/main/image-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 col-md-7 text-white">
+                <p style="font-size: 0.7rem"><strong>ALBUM</strong></p>
+                <h1 style="font-size: 4rem">VIOLA (feat. Salmo)</h1>
+                <p>Fedez, Salmo</p>
+                <p>Ascolta il nuovo singolo di Fedez e Salmo</p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-success btn-outline-success rounded-5 text-dark w-25"
+                  >
+                    Play
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark rounded-5 border-light m-4 w-25"
+                  >
+                    Salva
+                  </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="col-2 text-white-50 d-flex mt-3"
+                style="font-size: 0.8rem"
+              >
+                <p>NASCONDI ANNUNCI</p>
+              </div>
+            </div>
+            <!-- Buonasera -->
+            <h1 class="text-white mt-3 mb-5">Buonasera</h1>
+            <!-- Prima colonna dinamica-->
+            <div class="row">
+              <div class="col-12 col-md-8 col-lg-4" id="">
+                <div
+                  class="d-flex align-content-center align-items-center m-2 shadow"
+                >
+                  <img
+                    class="w-25 img-fluid"
+                    src="./assets 2/imgs/main/image-1.jpg"
+                    alt=""
+                  />
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet cdistinctio consequatur voluptate
+                    modi quasi iure expedita corporis nostrum aliquid delectus
+                  </p>
+                </div>
+                <div
+                  class="d-flex align-content-center align-items-center m-2 shadow"
+                >
+                  <img
+                    class="w-25 img-fluid"
+                    src="./assets 2/imgs/main/image-10.jpg"
+                    alt=""
+                  />
+                  <p class="text-light">Brani che ti piacciono</p>
+                </div>
+              </div>
+              <!-- Seconda colonna dinamica -->
+              <div class="col-12 col-md-8 col-lg-4" id="">
+                <div
+                  class="d-flex align-content-center align-items-center m-2 shadow"
+                >
+                  <img
+                    class="w-25 img-fluid"
+                    src="./assets 2/imgs/main/image-1.jpg"
+                    alt=""
+                  />
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet cdistinctio consequatur voluptate
+                    modi quasi iure expedita corporis nostrum aliquid delectus
+                  </p>
+                </div>
+                <div
+                  class="d-flex align-content-center align-items-center m-2 shadow"
+                >
+                  <img
+                    class="w-25 img-fluid"
+                    src="./assets 2/imgs/main/image-10.jpg"
+                    alt=""
+                  />
+                  <p class="text-light">Brani che ti piacciono</p>
+                </div>
+              </div>
+              <!-- Terza colonna dinamica-->
+              <div class="col-12 col-md-8 col-lg-4" id="">
+                <div
+                  class="d-flex align-content-center align-items-center m-2 shadow"
+                >
+                  <img
+                    class="w-25 img-fluid"
+                    src="./assets 2/imgs/main/image-1.jpg"
+                    alt=""
+                  />
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet cdistinctio consequatur voluptate
+                    modi quasi iure expedita corporis nostrum aliquid delectus
+                  </p>
+                </div>
+                <div
+                  class="d-flex align-content-center align-items-center m-2 shadow"
+                >
+                  <img
+                    class="w-25 img-fluid"
+                    src="./assets 2/imgs/main/image-10.jpg"
+                    alt=""
+                  />
+                  <p class="text-light">Brani che ti piacciono</p>
+                </div>
+              </div>
+            </div>
+            <!-- "Altro che ti può piacere" -->
+            <div class="row mt-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <h1 class="text-light">Altro di ciò che ti piace</h1>
+
+                <p class="text-white-50 mt-4">VISUALIZZA TUTTO</p>
+              </div>
+
+              <div class="d-flex justify-content-around flex-wrap">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                  <div class="card bg-dark shadow h-100">
+                    <img
+                      src="./assets 2/imgs/search/image-1.jpeg"
+                      class="card-img-top img-fluid p-2 rounded-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Your Discovery Weekly</h5>
+                      <p class="card-text text-white">
+                        La playlist create per te. Un mix di tracce fresche, il
+                        meglio della musica che ancora non conosci.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                  <div class="card bg-dark shadow h-100">
+                    <img
+                      src="./assets 2/imgs/main/image-5.jpg"
+                      class="card-img-top img-fluid p-2 rounded-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lofi Beats</h5>
+                      <p class="card-text text-white">
+                        Immergiti in un'atmosfera rilassante con i migliori Lofi
+                        Beats.La colonna sonora perfetta per rilassarti.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                  <div class="card bg-dark shadow h-100">
+                    <img
+                      src="./assets 2/imgs/main/image-6.jpg"
+                      class="card-img-top img-fluid p-2 rounded-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jazz Vibes</h5>
+                      <p class="card-text text-white">
+                        Scopri il suono raffinato del jazz con una selezione di
+                        tracce che spaziano tra melodie intime e ritmi
+                        coinvolgenti.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                  <div class="card bg-dark shadow h-100">
+                    <img
+                      src="./assets 2/imgs/main/image-19.jpg"
+                      class="card-img-top img-fluid p-2 rounded-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Street Culto</h5>
+                      <p class="card-text text-white">
+                        Un mix di suoni moderni e ritmi di strada, perfetto per
+                        chi ama l'energia della cultura street e il suo impatto
+                        sulla musica contemporanea.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                  <div class="card bg-dark shadow h-100">
+                    <img
+                      src="./assets 2/imgs/main/image-8.jpg"
+                      class="card-img-top img-fluid p-2 rounded-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Sangue Giovane</h5>
+                      <p class="card-text text-white">
+                        Sangue Giovane è l’essenza della gioventù ribelle, con
+                        ritmi freschi e testi che raccontano la forza e la
+                        passione dei giovani.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Destra -->
+
+          <div class="col-12 col-md-2 bg-black">
+            <div class="d-flex justify-content-between align-items-center mt-5">
+              <h5 class="text-white-50">Attività amici</h5>
+              <div class="mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-person-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
