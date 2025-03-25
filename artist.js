@@ -7,7 +7,7 @@ const albumsContainer = document.getElementById("albums-container");
 
 const artistUrl = `https://striveschool-api.herokuapp.com/api/deezer/artist/${artistId}`;
 
-// Recupero dei dettagli dell'artista
+// Recupero artista
 fetch(artistUrl)
     .then(response => {
         if (response.ok) {
