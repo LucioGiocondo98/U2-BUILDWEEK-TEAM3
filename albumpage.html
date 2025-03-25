@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./albumpage.css" />
+    <link rel="stylesheet" href="./circular-font.css" />
+  </head>
+  <body class="bodyBackground d-flex flex-column min-vh-100">
+    <header></header>
+    <main class="flex-grow-1">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <div class="col-sm-12 col-md-12 col-lg-3 me-0 order-2 order-lg-1">
+            <p class="fs-5 ms-0 d-none d-sm-none d-md-none d-lg-block">
+              <a
+                class="text-secondary text-decoration-none"
+                aria-current="page"
+                href="#"
+                >...</a
+              >
+            </p>
+
+            <ul
+              class="nav flex-sm-row justify-content-sm-around flex-lg-column fs-6"
+            >
+              <li class="nav-item">
+                <a
+                  class="text-secondary text-decoration-none"
+                  aria-current="page"
+                  href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-house-door me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                    />
+                  </svg>
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                  Cerca</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-collection me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+                    />
+                  </svg>
+                  La tua libreria</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="nav flex-column fs-6 pt-3 pb-3 d-none d-sm-none d-md-none d-lg-block"
+            >
+              <li class="">
+                <a
+                  class="text-secondary text-decoration-none"
+                  aria-current="page"
+                  href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-plus-square me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                    />
+                  </svg>
+                  Crea playlist</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-left-heart me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                    />
+                  </svg>
+                  Brani che ti piacciono</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                    />
+                  </svg>
+                  I tuoi episodi</a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="border-black m-0 bodyBackground d-none d-sm-none d-md-none d-lg-block"
+            >
+              <ul
+                class="scrollable-list bodyBackground list-unstyled p-1 w-100 font"
+              >
+                <li class="font">early stage emily syndrome (sett-ott 2022)</li>
+                <li>Be The Young</li>
+                <li>"..." cit.Kimiko (lug-ago 2022)</li>
+                <li>saggio vibes</li>
+                <li>main character energy (mag-giu 2022)</li>
+                <li>the fucking mood</li>
+                <li>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</li>
+                <li>An Emily Winchester kind of mood</li>
+                <li>landing page (mar-apr 2022)</li>
+                <li>2021 lol</li>
+                <li>cosa cazzo vuol dire questa affermazione (gen-feb 2022)</li>
+                <li>honey and glass (nov-dic 2021)</li>
+                <li>(Revenge) Training Arc</li>
+                <li>Lidia Emily</li>
+                <li>minecraft e nintendo switch (sep-oct 2021)</li>
+                <li>silvano d'orba? I hardly know her (lug-ago 2021)</li>
+                <li>Culo 2021</li>
+                <li>Fra Quintale Mix</li>
+                <li>Francesco Guccini Mix</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7 me-0 order-1 order-lg-2">
+            <!-- Colonna 2 (7/12) -->
+            <div class="footerBackground text-white p-3">
+              Colonna centrale (JS)
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-2 order-3 d-none d-sm-none d-md-none d-lg-block"
+          >
+            <!-- Colonna 3 (2/12) -->
+            <div class="bodyBackground text-white p-3">
+              <p class="mb-4 text-white">Attività amici</p>
+              <section class="d-flex flex-column">
+                <article class="d-flex flex-row text-secondary">
+                  <div>
+                    <img class="foto" src="./asset/main/image-1.jpg" />
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p class="fw-bold">Charlie Hookman</p>
+                    <p>In camera-Yumi Zouma</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-disc"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                        />
+                        <path
+                          d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                        />
+                      </svg>
+                      EP III
+                    </p>
+                  </div>
+                  <div class="text pt-2 ps-3">
+                    <p>4 ore</p>
+                  </div>
+                </article>
+                <article class="d-flex flex-row text-secondary">
+                  <div>
+                    <img class="foto" src="./asset/main/image-2.jpg" />
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p class="fw-bold">lightdark02</p>
+                    <p>Aimed to kill-Jade LeMac</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-disc"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                        />
+                        <path
+                          d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                        />
+                      </svg>
+                      Aimed to kill
+                    </p>
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p>8 ore</p>
+                  </div>
+                </article>
+                <article class="d-flex flex-row text-secondary">
+                  <div>
+                    <img class="foto" src="./asset/main/image-10.jpg" />
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p class="fw-bold">Valeria Traverso</p>
+                    <p>New Kings-Sleeping Woll</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-music-note-beamed"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M14 11V2h1v9zM6 3v10H5V3z"
+                        />
+                        <path
+                          d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"
+                        />
+                      </svg>
+                      Twint Badass mood
+                    </p>
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p>3 giorni</p>
+                  </div>
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footerBackground">
+      <section class="d-flex flex-row justify-content-between">
+        <article class="d-flex flex-row text-secondary m-2">
+          <div>
+            <img class="fotofooter" src="./asset/main/image-15.jpg" />
+          </div>
+          <div class="text pt-2 ps-2">
+            <p class="fw-bold">Fat Funny Friend</p>
+            <p>Maddle Zahm</p>
+          </div>
+          <div class="text pt-2 ps-3">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                />
+              </svg>
+            </p>
+          </div>
+        </article>
+
+        <div class="fs-3 text-secondary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-skip-start-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+            />
+            <path
+              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-skip-end-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z"
+            />
+          </svg>
+        </div>
+        <div class="fs-2 text-secondary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-mic"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"
+            />
+            <path
+              d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-speaker"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5M8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-volume-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zM6.312 6.39 8 5.04v5.92L6.312 9.61A.5.5 0 0 0 6 9.5H4v-3h2a.5.5 0 0 0 .312-.11M12.025 8a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8"
+            />
+          </svg>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
