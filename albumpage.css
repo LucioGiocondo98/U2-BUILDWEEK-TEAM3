@@ -1,0 +1,70 @@
+.bodyBackground {
+  background-color: #000000;
+}
+.footerBackground {
+  background-color: #181818;
+}
+
+.margin {
+  margin: 0;
+  padding: 0;
+}
+.scrollable-list {
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  overflow-y: auto; /* Abilitamo lo scrolling verticale */
+  border: 1px solid #000000; /* Aggiungiamo un bordo per migliorare la visibilità */
+}
+
+/* Personalizzazione della barra di scorrimento */
+.scrollable-list::-webkit-scrollbar {
+  width: 8px; /* Imposta la larghezza della barra di scorrimento */
+}
+
+/* Rimuove le frecce della barra di scorrimento */
+.scrollable-list::-webkit-scrollbar-button {
+  display: none; /* Nasconde le frecce */
+}
+
+/* Personalizzazione della traccia della barra di scorrimento */
+.scrollable-list::-webkit-scrollbar-track {
+  background: transparent; /* Rende trasparente la traccia */
+}
+
+/* Personalizzazione della parte mobile della barra di scorrimento */
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: #888; /* Colore della parte mobile */
+  border-radius: 0px; /* Rende arrotondato il cursore */
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Colore quando il cursore è sopra */
+}
+
+.font {
+  /*font-family: "Circular";
+  src: url(../fonts/CircularStd-Book.otf);*/
+  font-weight: 400;
+  font-style: normal;
+  color: grey;
+  font-size: 0.9em;
+  line-height: 2;
+}
+
+.foto {
+  border-radius: 100%;
+  width: 1.8em;
+  margin-right: 6px;
+}
+
+.text {
+  line-height: 0.3;
+  font-size: 0.7em;
+}
+
+.fotofooter {
+  border-radius: 0%;
+  width: 2.5em;
+  margin-right: 6px;
+}
