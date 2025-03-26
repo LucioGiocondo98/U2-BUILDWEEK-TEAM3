@@ -28,6 +28,7 @@
       padding: 20px;
       border-right: 1px solid #2b2a2a;
       font-size: 14px;
+      color: #969494;
     }
     .right-sidebar {
       width: 300px;
@@ -73,6 +74,7 @@
       height: 300px;
       position: relative;
       overflow-x: auto;
+      padding-bottom: 2rem;
       
   }
     .overlay {
@@ -87,13 +89,19 @@
     }
     .artist-info {
       position: absolute;
+      text-align: left;
       left: 45px;
-      margin: auto;
-      padding: 0;
+      padding-bottom: 3rem;
+      padding-top: 2rem;
+      color: #969494;
     }
     .display-1{
       flex: 1;
       min-width: 300px;
+      padding-bottom: 3rem;
+      font-size: 90;
+      margin: 0;
+      padding: 0;
     }
     .month{
       padding: 2px;
@@ -128,6 +136,7 @@
       align-items: flex-start;
       gap: 10px;
       margin-bottom: 20px;
+      color: #969494;
     }
     .friend img {
       border-radius: 50%;
@@ -140,7 +149,7 @@
     }
     .friend-time {
       font-size: 0.8rem;
-      color: #bbb;
+      color: #8b8b8b;
     }
     footer {
   height: 80px;
@@ -165,7 +174,7 @@ footer .progress-bar {
 
 footer i {
   font-size: 1.1rem;
-  color: #b3b3b3;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -180,7 +189,7 @@ footer i.text-success {
 
 footer small {
   font-size: 0.75rem;
-  color: #b3b3b3;
+  color: #918e8e;
 }
 
 footer .bg-secondary {
@@ -198,13 +207,13 @@ footer .bg-white {
   <!-- Sidebar sinistra -->
   <div class="sidebar">
     <a href="#"></a><i class="bi bi-three-dots mt-0"></i>
-    <a href="#" class="text-white m-0 mt-1"><i class="bi bi-house-door-fill text-white"></i> Home</a>
-    <a href="#" class="text-white m-0 mt-1"><i class="bi bi-search"></i> Cerca</a>
-    <a href="#" class="text-white m-0 mt-1"><i class="bi bi-collection"></i> La tua libreria</a>
+    <a href="#" class="text-secondary m-0 mt-1"><i class="bi bi-house-door-fill text-white"></i> Home</a>
+    <a href="#" class="text-secondary m-0 mt-1"><i class="bi bi-search text-white"></i> Cerca</a>
+    <a href="#" class="text-secondary m-0 mt-1"><i class="bi bi-collection text-white"></i> La tua libreria</a>
 
-    <a href="#" class="mt-4 text-white"><i class="bi bi-plus-square"></i> Crea playlist</a>
-    <a href="#" class="text-white m-0 mt-1"><i class="bi bi-heart-fill text-purple"></i> Brani che ti piacciono</a>
-    <a href="#" class="text-white m-0 mt-1"><i class="bi bi-bookmark-fill"></i> I tuoi episodi</a>
+    <a href="#" class="mt-4 text-secondary"><i class="bi bi-plus-square-fill text-white"></i> Crea playlist</a>
+    <a href="#" class="text-secondary m-0 mt-1 fw-bold"><i class="bi bi-heart-fill text-danger"></i> Brani che ti piacciono</a>
+    <a href="#" class="text-secondary m-0 mt-1"><i class="bi bi-bookmark-fill text-success"></i> I tuoi episodi</a>
 
     <div class="playlist mt-3">
       <div>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</div>
@@ -280,6 +289,7 @@ footer .bg-white {
     <div class="container mt-5">
       <div class="row">
         <!-- Brani popolari -->
+         
         <div class="col-md-8">
           <h4 class="mb-4">Popolari</h4>
           <div class="song-list albums-container">
@@ -308,6 +318,7 @@ footer .bg-white {
                 <span class="text-white">43.836.579</span>
                 <span class="text-white">3:22</span>
               </div>
+              <span class="mt-3 text-secondary p-1">Visualizza altro</span>
           </div>
         </div>
 
