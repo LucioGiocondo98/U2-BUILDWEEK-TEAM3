@@ -1,0 +1,49 @@
+.foto {
+  border-radius: 100%;
+  width: 1.8em;
+  margin-right: 6px;
+}
+
+.text {
+  line-height: 0.3;
+  font-size: 0.7em;
+}
+
+.font {
+  /*font-family: "Circular";
+    src: url(../fonts/CircularStd-Book.otf);*/
+  font-weight: 400;
+  font-style: normal;
+  color: grey;
+  font-size: 0.9em;
+  line-height: 2;
+}
+
+.scrollable-list {
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #000000;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-list::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
