@@ -13,33 +13,29 @@
   margin: 0;
   padding: 0;
   height: 400px;
-  overflow-y: auto; /* Abilitamo lo scrolling verticale */
-  border: 1px solid #000000; /* Aggiungiamo un bordo per migliorare la visibilità */
+  overflow-y: auto;
+  border: 1px solid #000000;
 }
 
-/* Personalizzazione della barra di scorrimento */
 .scrollable-list::-webkit-scrollbar {
-  width: 8px; /* Imposta la larghezza della barra di scorrimento */
+  width: 8px;
 }
 
-/* Rimuove le frecce della barra di scorrimento */
 .scrollable-list::-webkit-scrollbar-button {
-  display: none; /* Nasconde le frecce */
+  display: none;
 }
 
-/* Personalizzazione della traccia della barra di scorrimento */
 .scrollable-list::-webkit-scrollbar-track {
-  background: transparent; /* Rende trasparente la traccia */
+  background: transparent;
 }
 
-/* Personalizzazione della parte mobile della barra di scorrimento */
 .scrollable-list::-webkit-scrollbar-thumb {
-  background-color: #888; /* Colore della parte mobile */
-  border-radius: 0px; /* Rende arrotondato il cursore */
+  background-color: #888;
+  border-radius: 0px;
 }
 
 .scrollable-list::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Colore quando il cursore è sopra */
+  background-color: #555;
 }
 
 .font {

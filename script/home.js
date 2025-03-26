@@ -22,7 +22,7 @@ albumIds.forEach(albumId => {
                 <div class="card-body bg-dark">
                     <h2 class="card-title h6">${data.title}</h2>
                     <p class="card-text">
-                        <a href="artist.html?artistId=${data.artist.id}" class="text-white artist-link">${data.artist.name}</a>
+                        <a href="artist.html?artistId=${data.artist.id}" class="text-white artist-link text-decoration-none">${data.artist.name}</a>
                     </p>
                 </div>
             `;

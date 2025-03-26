@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./home.css" />
   </head>
   <body>
     <main>
@@ -17,127 +18,166 @@
         <div class="row justify-content-center">
           <!-- Sidebar sinistra -->
 
-          <div class="col-12 col-md-3 sidebar bg-black">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="white"
-              class="bi bi-three-dots m-3"
-              viewBox="0 0 16 16"
+          <div class="col-12 col-md-3 bg-black">
+            <p class="fs-5 ms-0 d-none d-sm-none d-md-none d-lg-block">
+              <a
+                class="text-secondary text-decoration-none"
+                aria-current="page"
+                href="#"
+                >...</a
+              >
+            </p>
+
+            <ul
+              class="nav flex-sm-row justify-content-sm-around flex-lg-column fs-6"
             >
-              <path
-                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
-              />
-            </svg>
-            <ul class="list-unstyled text-white-50 m-3 mb-5">
-              <li class="mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-house-fill me-2 mb-1"
-                  viewBox="0 0 16 16"
+              <li class="nav-item">
+                <a
+                  class="text-secondary text-decoration-none"
+                  aria-current="page"
+                  href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-house-door me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                    />
+                  </svg>
+                  Home</a
                 >
-                  <path
-                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
-                  />
-                  <path
-                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
-                  />
-                </svg>
-
-                Home
               </li>
-              <li class="mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search me-2 mb-1"
-                  viewBox="0 0 16 16"
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                  Cerca</a
                 >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-                Cerca
               </li>
-              <li class="mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-collection me-2 mb-1"
-                  viewBox="0 0 16 16"
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-collection me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+                    />
+                  </svg>
+                  La tua libreria</a
                 >
-                  <path
-                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
-                  />
-                </svg>
-                La tua libreria
-              </li>
-
-              <hr class="invisible" />
-
-              <li class="mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-plus-square-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"
-                  />
-                </svg>
-                Crea playlist
-              </li>
-              <li class="mb-3">Brani che ti piacciono</li>
-
-              <li class="mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-bookmark-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"
-                  />
-                </svg>
-                I tuoi episodi
               </li>
             </ul>
-            <hr />
-            <p class="text-white-50">
-              eraly stage emily syndrome(sett-ott2022)
-            </p>
-            <p class="text-white-50">Be the Young</p>
-            <p class="text-white-50">"..."cit Kimiko (lug-ago2022)</p>
-            <p class="text-white-50">saggio vibes</p>
-            <p class="text-white-50">main character energy (mag-giu)</p>
-            <p class="text-white-50">that fucking mood</p>
-            <p class="text-white-50">VEE, CARLOTTA EGIACOMO VANNO A BOSIO</p>
-            <p class="text-white-50">2021 lol</p>
-            <p class="text-white-50">
-              cosa cazzo vuol dire questa affermazione
-            </p>
-            <p class="text-white-50">honey and glass (nov-dic 2021)</p>
-            <p class="text-white-50">
-              eraly stage emily syndrome(sett-ott2022)
-            </p>
-            <p class="text-white-50">Be the Young</p>
-            <p class="text-white-50">"..."cit Kimiko (lug-ago2022)</p>
-            <p class="text-white-50">saggio vibes</p>
-            <p class="text-white-50">main character energy (mag-giu)</p>
+            <ul
+              class="nav flex-column fs-6 pt-3 pb-3 d-none d-sm-none d-md-none d-lg-block"
+            >
+              <li class="">
+                <a
+                  class="text-secondary text-decoration-none"
+                  aria-current="page"
+                  href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-plus-square me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                    />
+                  </svg>
+                  Crea playlist</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-left-heart me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                    />
+                  </svg>
+                  Brani che ti piacciono</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-secondary text-decoration-none" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+                    />
+                  </svg>
+                  I tuoi episodi</a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="border-black m-0 bodyBackground d-none d-sm-none d-md-none d-lg-block"
+            >
+              <ul
+                class="scrollable-list bodyBackground list-unstyled p-1 w-100 font"
+              >
+                <li class="font">early stage emily syndrome (sett-ott 2022)</li>
+                <li>Be The Young</li>
+                <li>"..." cit.Kimiko (lug-ago 2022)</li>
+                <li>saggio vibes</li>
+                <li>main character energy (mag-giu 2022)</li>
+                <li>the fucking mood</li>
+                <li>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</li>
+                <li>An Emily Winchester kind of mood</li>
+                <li>landing page (mar-apr 2022)</li>
+                <li>2021 lol</li>
+                <li>cosa cazzo vuol dire questa affermazione (gen-feb 2022)</li>
+                <li>honey and glass (nov-dic 2021)</li>
+                <li>(Revenge) Training Arc</li>
+                <li>Lidia Emily</li>
+                <li>minecraft e nintendo switch (sep-oct 2021)</li>
+                <li>silvano d'orba? I hardly know her (lug-ago 2021)</li>
+                <li>Culo 2021</li>
+                <li>Fra Quintale Mix</li>
+                <li>Francesco Guccini Mix</li>
+              </ul>
+            </div>
           </div>
           <!-- Centro Pagina -->
           <!-- Arrows -->
@@ -260,85 +300,7 @@
             <!-- Buonasera -->
             <h1 class="text-white mt-3 mb-5">Buonasera</h1>
             <!-- Prima colonna dinamica-->
-            <div class="row">
-              <div class="col-12 col-md-8 col-lg-4" id="">
-                <div
-                  class="d-flex align-content-center align-items-center m-2 shadow"
-                >
-                  <img
-                    class="w-25 img-fluid"
-                    src="./assets 2/imgs/main/image-1.jpg"
-                    alt=""
-                  />
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet cdistinctio consequatur voluptate
-                    modi quasi iure expedita corporis nostrum aliquid delectus
-                  </p>
-                </div>
-                <div
-                  class="d-flex align-content-center align-items-center m-2 shadow"
-                >
-                  <img
-                    class="w-25 img-fluid"
-                    src="./assets 2/imgs/main/image-10.jpg"
-                    alt=""
-                  />
-                  <p class="text-light">Brani che ti piacciono</p>
-                </div>
-              </div>
-              <!-- Seconda colonna dinamica -->
-              <div class="col-12 col-md-8 col-lg-4" id="">
-                <div
-                  class="d-flex align-content-center align-items-center m-2 shadow"
-                >
-                  <img
-                    class="w-25 img-fluid"
-                    src="./assets 2/imgs/main/image-1.jpg"
-                    alt=""
-                  />
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet cdistinctio consequatur voluptate
-                    modi quasi iure expedita corporis nostrum aliquid delectus
-                  </p>
-                </div>
-                <div
-                  class="d-flex align-content-center align-items-center m-2 shadow"
-                >
-                  <img
-                    class="w-25 img-fluid"
-                    src="./assets 2/imgs/main/image-10.jpg"
-                    alt=""
-                  />
-                  <p class="text-light">Brani che ti piacciono</p>
-                </div>
-              </div>
-              <!-- Terza colonna dinamica-->
-              <div class="col-12 col-md-8 col-lg-4" id="">
-                <div
-                  class="d-flex align-content-center align-items-center m-2 shadow"
-                >
-                  <img
-                    class="w-25 img-fluid"
-                    src="./assets 2/imgs/main/image-1.jpg"
-                    alt=""
-                  />
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet cdistinctio consequatur voluptate
-                    modi quasi iure expedita corporis nostrum aliquid delectus
-                  </p>
-                </div>
-                <div
-                  class="d-flex align-content-center align-items-center m-2 shadow"
-                >
-                  <img
-                    class="w-25 img-fluid"
-                    src="./assets 2/imgs/main/image-10.jpg"
-                    alt=""
-                  />
-                  <p class="text-light">Brani che ti piacciono</p>
-                </div>
-              </div>
-            </div>
+            <div class="row" id="album-container"></div>
             <!-- "Altro che ti può piacere" -->
             <div class="row mt-5">
               <div class="d-flex align-items-center justify-content-between">
@@ -443,48 +405,187 @@
           <!-- Sidebar Destra -->
 
           <div class="col-12 col-md-2 bg-black">
-            <div class="d-flex justify-content-between align-items-center mt-5">
-              <h5 class="text-white-50">Attività amici</h5>
-              <div class="mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="white"
-                  class="bi bi-person-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="white"
-                  class="bi bi-x-lg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                  />
-                </svg>
-              </div>
+            <div class="bodyBackground text-white p-1">
+              <p class="mb-4 text-white p-2">Attività amici</p>
+              <section class="d-flex flex-column">
+                <article class="d-flex flex-row text-secondary">
+                  <div>
+                    <img class="foto" src="./asset/main/image-1.jpg" />
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p class="fw-bold">Charlie Hookman</p>
+                    <p>In camera-Yumi Zouma</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-disc"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                        />
+                        <path
+                          d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                        />
+                      </svg>
+                      EP III
+                    </p>
+                  </div>
+                  <div class="text pt-2 ps-3">
+                    <p>4 ore</p>
+                  </div>
+                </article>
+                <article class="d-flex flex-row text-secondary">
+                  <div>
+                    <img class="foto" src="./asset/main/image-2.jpg" />
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p class="fw-bold">lightdark02</p>
+                    <p>Aimed to kill-Jade LeMac</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-disc"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                        />
+                        <path
+                          d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                        />
+                      </svg>
+                      Aimed to kill
+                    </p>
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p>8 ore</p>
+                  </div>
+                </article>
+                <article class="d-flex flex-row text-secondary">
+                  <div>
+                    <img class="foto" src="./asset/main/image-10.jpg" />
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p class="fw-bold">Valeria Traverso</p>
+                    <p>New Kings-Sleeping Woll</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-music-note-beamed"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M14 11V2h1v9zM6 3v10H5V3z"
+                        />
+                        <path
+                          d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"
+                        />
+                      </svg>
+                      Twint Badass mood
+                    </p>
+                  </div>
+                  <div class="text pt-2 ps-2">
+                    <p>3 giorni</p>
+                  </div>
+                </article>
+              </section>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <footer class="bg-dark text-white py-2 fixed-bottom">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Info brano -->
+          <div class="col-3 d-flex align-items-center" width="45" height="45">
+            <img
+              src="./asset/main/image-14.jpg"
+              alt="Cover"
+              width="45"
+              height="45"
+              class="me-3"
+            />
+            <div>
+              <div><strong>Fat Funny Friend</strong></div>
+              <div>
+                <small>Maddie Zahm</small>
+              </div>
+            </div>
+            <div><i class="bi bi-heart ms-4"></i></div>
+          </div>
+
+          <!-- Controlli centrali -->
+          <div class="col-6 text-center">
+            <div class="d-flex justify-content-center align-items-center mb-1">
+              <i class="bi bi-shuffle mx-2 text-success"></i>
+              <i class="bi bi-skip-start-fill mx-2"></i>
+              <i
+                class="bi bi-play-circle-fill mx-2"
+                style="font-size: 30px"
+              ></i>
+              <i class="bi bi-skip-end-fill mx-2"></i>
+              <i class="bi bi-pc-display mx-2 text-success"></i>
+            </div>
+            <div class="d-flex align-items-center">
+              <small class="me-2">0:58</small>
+              <div
+                class="progress flex-grow-1 bg-secondary"
+                style="height: 4px"
+              >
+                <div class="progress-bar bg-light" style="width: 30%"></div>
+              </div>
+              <small class="ms-2">3:20</small>
+            </div>
+          </div>
+
+          <!-- Controlli destra -->
+          <div class="col-3 d-flex justify-content-end align-items-center">
+            <i class="bi bi-mic me-3"></i>
+            <i class="bi bi-list me-3"></i>
+            <i class="bi bi-layout-sidebar me-3"></i>
+            <i class="bi bi-volume-up me-2"></i>
+            <div
+              class="bg-secondary rounded-pill"
+              style="width: 80px; height: 4px"
+            >
+              <div
+                class="bg-white rounded-pill"
+                style="width: 60%; height: 100%"
+              ></div>
+            </div>
+            <i class="bi bi-arrows-fullscreen ms-3"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <script src="./script/home.js"></script>
   </body>
 </html>
