@@ -21,7 +21,7 @@ albumIds.forEach((albumId) => {
           // Aggiungo contenuto alla card
           card.innerHTML = `
                   <img src="${data.cover_medium}" class="card-img-top" alt="Copertina dell'album ${data.title}">
-                  <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                  <div class="card-body bg-dark d-flex flex-column justify-content-between text-center">
                       <h2 class="card-title h6">${data.title}</h2>
                       <p class="card-text">
                           <a href="artist.html?artistId=${data.artist.id}" class="text-white artist-link text-decoration-none">${data.artist.name}</a>
