@@ -22,6 +22,8 @@ const getAlbumDetails = function () {
       //   aggiungo titolo album
       const nameAlbum = document.getElementsByTagName("h1")[0];
       nameAlbum.innerHTML = `${data.title}`;
+      const nameAlbumSm = document.getElementById("title-sm");
+      nameAlbumSm.innerHTML = `${data.title}`;
       //   aggiungo dettagli album
       const artistImg = document.getElementById("img-artist");
       artistImg.innerHTML = `
@@ -32,13 +34,23 @@ const getAlbumDetails = function () {
          class="rounded-circle"
         />
       `;
-
+      const artistImgSm = document.getElementById("artist-img-sm");
+      artistImgSm.innerHTML = `
+<img
+         src="${data.artist.picture}"
+         alt="${data.artist.name}"
+         width="30px"
+         class="rounded-circle"
+        />
+        <span class="fw-bold ms-2">${data.artist.name}</span>
+`;
       const nameArtist = document.getElementById("name-artist");
       nameArtist.innerText = `${data.artist.name}`;
 
       const releaseDate = document.getElementById("release");
       releaseDate.innerText = `${data.release_date.slice(0, 4)}`;
-
+      const releaseDateSm = document.getElementById("release-sm");
+      releaseDateSm.innerText = `${data.release_date.slice(0, 4)}`;
       const totalSeconds = data.duration;
 
       const minutes = Math.floor(totalSeconds / 60);
@@ -62,15 +74,26 @@ const getAlbumDetails = function () {
         };
 
         newSong.innerHTML = `
-        <div class="col col-1 text-end">${i + 1}</div>
-                  <div class="col col-6">
+        <div class="col col-1 text-end d-none d-md-block">${i + 1}</div>
+                  <div class="col col-6 d-flex flex-grow-1 flex-md-grow-0">
+                  <div>
                     <p class="m-0 text-light">${song.title}</p>
                     <p class="m-0">${song.artist.name}</p>
+                    </div>
+                 
                   </div>
-                  <div class="col col-2 text-end">${song.rank}</div>
-                  <div class="col col-2 text-end">${formatTime(
-                    song.duration
-                  )}</div>
+                  <div class="col col-2 text-end d-none d-md-block">${
+                    song.rank
+                  }</div>
+                  <div class="col col-2 text-end">
+                  <div class="d-none d-md-block">
+                  ${formatTime(song.duration)}
+                  </div>
+                  <button class="btn d-md-none" style="transform: rotate(90deg)
+                  ">
+                  <i class="bi bi-three-dots fs-4 text-light" ></i>
+                </button>
+                  </div>
         `;
 
         songs.appendChild(newSong);

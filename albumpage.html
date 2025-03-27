@@ -259,16 +259,19 @@
               </div>
               <!--  album -->
               <div class="container" id="album-ref">
-                <div class="row">
-                  <div id="album-img" class="col col-4">
+                <div class="row flex-column flex-md-row">
+                  <div id="album-img" class="col col-md-4">
                     <!-- immagine album -->
                   </div>
-                  <div class="col d-flex flex-column justify-content-end col-8">
-                    <p style="font-size: 0.7rem" class="m-0">
+                  <div
+                    class="col d-flex flex-column justify-content-end col-md-8"
+                  >
+                    <p style="font-size: 0.7rem" class="m-0 d-none d-md-block">
                       <strong>ALBUM</strong>
                     </p>
-                    <h1 style="font-size: 4rem"></h1>
-                    <div id="album-details ">
+                    <h1 class="display-3 fw-bold d-none d-md-block"></h1>
+                    <h2 class="mt-4 fw-bold" id="title-sm"></h2>
+                    <div id="album-details " class="d-none d-md-block">
                       <ul class="d-flex align-items-center p-0 m-0">
                         <li class="me-2 list-unstyled" id="img-artist">
                           <!-- immagine artista -->
@@ -284,45 +287,61 @@
                         </li>
                       </ul>
                     </div>
+                    <div id="album-details-sm" class="d-md-none">
+                      <div id="artist-img-sm" class="pt-2 pt-md-0">
+                        <!-- immagine + nome artista -->
+                      </div>
+                      <div>
+                        <ul class="d-flex text-secondary p-0">
+                          <li class="list-unstyled pe-4">Album</li>
+                          <li id="release-sm">
+                            <!-- anno -->
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
               style="
-                background: linear-gradient(
-                  to bottom,
-                  rgb(24 24 24),
-                  black 20%
-                );
+                background: linear-gradient(to bottom, rgb(24 24 24), black);
               "
             >
-              <div class="d-flex align-items-center gap-3 ps-3 pt-3">
-                <button
-                  id="playPauseBtn"
-                  class="btn rounded-circle"
-                  style="background-color: #1fdf64; width: 55px; height: 55px"
-                >
-                  <i
-                    id="playPauseIcon"
-                    class="bi bi-play-fill fs-3 text-dark"
-                  ></i>
-                </button>
+              <div class="d-flex align-items-center gap-3 ps-3 pt-3 pe-3">
+                <div class="order-1 order-md-0">
+                  <i class="bi bi-shuffle fs-4 text-light me-3 d-md-none"></i>
 
-                <button class="btn">
-                  <i class="bi bi-heart fs-4 text-light"></i>
-                </button>
+                  <button
+                    id="playPauseBtn"
+                    class="btn rounded-circle"
+                    style="background-color: #1fdf64; width: 55px; height: 55px"
+                  >
+                    <i
+                      id="playPauseIcon"
+                      class="bi bi-play-fill fs-3 text-dark"
+                    ></i>
+                  </button>
+                </div>
+                <div class="flex-grow-1 flex-md-grow-0">
+                  <button class="btn">
+                    <i class="bi bi-heart fs-4 text-light"></i>
+                  </button>
 
-                <button class="btn">
-                  <i class="bi bi-arrow-down-circle fs-4 text-light"></i>
-                </button>
+                  <button class="btn">
+                    <i class="bi bi-arrow-down-circle fs-4 text-light"></i>
+                  </button>
 
-                <button class="btn">
-                  <i class="bi bi-three-dots fs-4 text-light"></i>
-                </button>
+                  <button class="btn">
+                    <i class="bi bi-three-dots fs-4 text-light"></i>
+                  </button>
+                </div>
               </div>
               <div class="container pt-3 text-secondary" id="songs">
-                <div class="row border-bottom border-secondary pb-3">
+                <div
+                  class="row border-bottom border-secondary pb-3 d-none d-md-inline-block d-md-flex"
+                >
                   <div class="col col-1 text-end fw-bold">#</div>
                   <div class="col col-5 fw-bold">TITOLO</div>
                   <div class="col col-3 text-end fw-bold">RIPRODUZIONI</div>
