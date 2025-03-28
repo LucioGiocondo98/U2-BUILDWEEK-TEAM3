@@ -105,7 +105,8 @@
 
 .overlay-column {
   position: absolute;
-  top: 650px;
+  top: 640px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: index;
 }
