@@ -16,10 +16,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <style>
+      .active-song {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+      }
+      .song-info:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.01);
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body class="bodyBackground d-flex flex-column min-vh-100">
     <header></header>
-    <main class="flex-grow-1" style="margin-bottom: 100px">
+    <main class="flex-grow-1 container1" style="margin-bottom: 100px">
       <div class="container-fluid">
         <div class="row g-0">
           <div class="col-sm-12 col-md-12 col-lg-3 me-0 order-2 order-lg-1">
@@ -33,7 +44,7 @@
             </p>
 
             <ul
-              class="nav flex-sm-row justify-content-sm-around flex-lg-column fs-6"
+              class="nav flex-sm-row justify-content-sm-around flex-lg-column fs-6 pt-sm-2"
             >
               <li class="nav-item">
                 <a
@@ -461,6 +472,21 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-12 d-flex justify-content-around p-2 text-white fs-3 custom-border d-none d-lg-none d-sm-flex d-md-flex overlay-column bg-black"
+          >
+            <div class="">Fat Funny Friend</div>
+            <div>
+              <i class="bi bi-pc-display mx-2 text-success"></i>
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-play-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer
       class="bg-dark text-white py-2 fixed-bottom d-none d-sm-none d-md-none d-lg-block"
@@ -480,11 +506,14 @@
               width="45"
               height="45"
               class="me-3"
+              id="footer-img"
             />
             <div>
-              <div><strong>Fat Funny Friend</strong></div>
+              <div class="fw-bold" id="footer-song">
+                <strong>Fat Funny Friend</strong>
+              </div>
               <div>
-                <small>Maddie Zahm</small>
+                <small id="footer-artist">Maddie Zahm</small>
               </div>
             </div>
             <div>
@@ -514,7 +543,7 @@
               >
                 <div class="progress-bar bg-light" style="width: 30%"></div>
               </div>
-              <small class="ms-2">3:20</small>
+              <small class="ms-2" id="footer-time">3:20</small>
             </div>
           </div>
 
