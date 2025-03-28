@@ -84,7 +84,7 @@
     left: 0;
     width: 100%;
     background-color: #000;
-    z-index: 1000; /* Assicurati che la sidebar sia sopra gli altri contenuti */
+    z-index: 1000;
   }
   
   .sidebar-mobile-bottom ul {
