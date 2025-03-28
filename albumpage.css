@@ -68,7 +68,7 @@
 .scrollable-list2 {
   margin: 0;
   padding: 0;
-  height: 644px;
+  height: 95vh;
   overflow-y: auto;
   border: 1px solid #000000;
 }
