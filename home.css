@@ -76,3 +76,31 @@
 .scrollable-list2::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+/* Mobile view */
+@media (max-width: 767px) {
+  .sidebar-mobile-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000; /* Assicurati che la sidebar sia sopra gli altri contenuti */
+  }
+  
+  .sidebar-mobile-bottom ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .sidebar-mobile-bottom a {
+    color: #ccc;
+  }
+
+  .sidebar-mobile-bottom svg {
+    margin-right: 8px;
+  }
+  footer{ 
+    display: none;
+  }
+}
