@@ -120,6 +120,10 @@ const getAlbumDetails = function () {
           footerArtist.innerText = ` ${song.artist.name}`;
           footerTime.innerText = `${formatTime(song.duration)}`;
           footerImg.src = `${song.album.cover}`;
+          document
+            .querySelectorAll(".song-info")
+            .forEach((song) => song.classList.remove("active-song"));
+          songInfo.classList.add("active-song");
         });
       });
     })
