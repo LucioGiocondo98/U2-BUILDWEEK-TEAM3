@@ -76,6 +76,7 @@
 .scrollable-list2::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
 /* Mobile view */
 @media (max-width: 767px) {
   .sidebar-mobile-bottom {
@@ -96,11 +97,17 @@
   .sidebar-mobile-bottom a {
     color: #ccc;
   }
-
+  
   .sidebar-mobile-bottom svg {
     margin-right: 8px;
   }
-  footer{ 
+  footer{
     display: none;
+  }
+  #search-results {
+    max-height: 87vh;
+    width: 97%;
+    overflow-y: auto;
+
   }
 }
