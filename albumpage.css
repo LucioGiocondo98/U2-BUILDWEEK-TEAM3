@@ -93,3 +93,19 @@
 .scrollable-list2::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+.custom-border {
+  border: 2px solid #181818;
+  border-radius: 15px;
+}
+
+.container1 {
+  position: relative;
+}
+
+.overlay-column {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+}
