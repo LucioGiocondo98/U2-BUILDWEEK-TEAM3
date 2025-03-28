@@ -46,10 +46,12 @@
                     albumsData.data.forEach(album => {
                         albumHTML += `
                             <div class="col-6 col-sm-6 col-lg-3 g-3">
-                                <div class="card bg-secondary text-white album-card" data-album-id="${album.id}">
+                                <div class="card bg-secondary text-white album-card d-flex flex-column h-100" data-album-id="${album.id}">
                                     <img src="${album.cover_medium}" class="card-img-top" alt="Copertina dell'album ${album.title}">
-                                    <div class="card-body bg-dark">
+                                    <div class="card-body bg-dark d-flex flex-column">
                                         <h2 class="card-title h6">${album.title}</h2>
+                                        <div class="mt-auto">
+                                            </div>
                                     </div>
                                 </div>
                             </div>
