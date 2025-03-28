@@ -42,10 +42,20 @@ const getAlbumDetails = function () {
          width="30px"
          class="rounded-circle"
         />
-        <span class="fw-bold ms-2">${data.artist.name}</span>
+        <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-light fw-bold"
+                    href="./artist.html?artistId=${data.artist.id}"
+                  >
+                    ${data.artist.name}
+                  </a>
 `;
       const nameArtist = document.getElementById("name-artist");
-      nameArtist.innerText = `${data.artist.name}`;
+      nameArtist.innerHTML = `<a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-light fw-bold"
+                    href="./artist.html?artistId=${data.artist.id}"
+                  >
+                    ${data.artist.name}
+                  </a>`;
 
       const releaseDate = document.getElementById("release");
       releaseDate.innerText = `${data.release_date.slice(0, 4)}`;
@@ -75,8 +85,9 @@ const getAlbumDetails = function () {
 
         newSong.innerHTML = `
         <div class="col col-1 text-end d-none d-md-block">${i + 1}</div>
-                  <div class="col col-6 d-flex flex-grow-1 flex-md-grow-0">
+                  <div class="col col-6 d-flex flex-grow-1 flex-md-grow-0 song-info ">
                   <div>
+                 
                     <p class="m-0 text-light">${song.title}</p>
                     <p class="m-0">${song.artist.name}</p>
                     </div>
@@ -97,6 +108,19 @@ const getAlbumDetails = function () {
         `;
 
         songs.appendChild(newSong);
+
+        // funzione soundbar
+        const songInfo = newSong.querySelector(".song-info");
+        songInfo.addEventListener("click", () => {
+          const footerSong = document.getElementById("footer-song");
+          const footerArtist = document.getElementById("footer-artist");
+          const footerTime = document.getElementById("footer-time");
+          const footerImg = document.getElementById("footer-img");
+          footerSong.innerText = `${song.title} `;
+          footerArtist.innerText = ` ${song.artist.name}`;
+          footerTime.innerText = `${formatTime(song.duration)}`;
+          footerImg.src = `${song.album.cover}`;
+        });
       });
     })
 
