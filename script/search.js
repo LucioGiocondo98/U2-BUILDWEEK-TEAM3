@@ -53,7 +53,7 @@ const displayResults = (data) => {
         <div class="card-body bg-dark">
           <h5 class="card-title">${item.title}</h5>
           <p class="card-text">${item.artist.name}</p>
-          <a href="${item.link}" class="btn btn-secondary" target="_blank">Listen</a>
+          <a href="#" class="btn btn-secondary" target="_blank">Listen</a>
         </div>
       </div>
     `;
